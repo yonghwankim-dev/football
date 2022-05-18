@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Coach Information</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__column">
+            <h2>Team Name</h2>
+        </div>
+        <div class="header__column">
+            <a href="#">Home</a>
+            <a href="#">Logout</a>
+            <span>15:58</span>
+        </div>
+    </div>
+
+    <div class="container"> 
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="container__title">
+                <h3>Update Coach Information</h3>
+                <hr>
+            </div>
+
+            <div class="profile__img">
+                <img src="" alt="Coach Img">
+                <input type="file" name="file">
+            </div>
+            <div class="profile__info">
+                <label for="name">Name</label> <input type="text" name="name" value="Robin">
+                <label for="coach_number">Coach Number</label> <input type="text" disabled name="coach_number" value="01">
+                <label for="coach_ability_number">Coach Ability Number</label> <input type="text" disabled nmae="coach_ability_number" value="01">
+                <label for="numOfWins">Num of Wins</label> <input type="text" name="numOfWins" value="02">
+            </div>
+            <div class="profile__graph">
+                <!-- 방사형 그래프 -->
+                <label for="training">Training</label><input type="text" name="training">
+                <label for="tactics">Tactics</label><input type="text" name="tactics">
+                <label for="Skill">Skill</label><input type="text" name="skill">
+                <label for="player_manage">Player Manage</label><input type="text" name="player_manage">
+            </div>
+            <div class="container__btn">
+                <input type="submit" value="확인">
+                <input type="button" value="취소">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
